@@ -9,6 +9,7 @@ using System.Web.Mvc;
 using Sportscasters_final.DAL;
 using Sportscasters_final.Models;
 using PagedList;
+using System.Data.Entity.Infrastructure;
 
 namespace Sportscasters_final.Controllers
 {
@@ -98,7 +99,7 @@ namespace Sportscasters_final.Controllers
                     return RedirectToAction("Index");
                 }
             }
-            catch (DataException /*dex*/)
+            catch (RetryLimitExceededException /*dex*/)
             {
                 ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem see your system administrator.");
             }
@@ -139,7 +140,7 @@ namespace Sportscasters_final.Controllers
                     db.SaveChanges();
                     return RedirectToAction("Index");
                 }
-                catch (DataException /*dex*/)
+                catch (RetryLimitExceededException /*dex*/)
                 {
                     ModelState.AddModelError("", "Unable to save changes. Try again, and if the problem persists, see your system administrator.");
                 }
@@ -177,7 +178,7 @@ namespace Sportscasters_final.Controllers
                 db.Customers.Remove(customer);
                 db.SaveChanges();
             }
-            catch (DataException/*dex*/)
+            catch (RetryLimitExceededException/*dex*/)
             {
                 return RedirectToAction("Delete", new { id = id, saveChangesError = true });
             }

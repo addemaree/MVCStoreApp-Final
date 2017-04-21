@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Sportscasters_final.DAL;
+using System.Data.Entity.Infrastructure.Interception;
+using Sportscasters_final.Logging;
 
 namespace Sportscasters_final
 {
@@ -16,6 +19,8 @@ namespace Sportscasters_final
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+            DbInterception.Add(new StoreInterceptorTransientErrors());
+            DbInterception.Add(new StoreInterceptorLogging());
         }
     }
 }
