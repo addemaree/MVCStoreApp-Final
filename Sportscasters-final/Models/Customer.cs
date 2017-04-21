@@ -10,7 +10,8 @@ namespace Sportscasters_final.Models
         public int CustomerID { get; set; }
         public string LastName { get; set; }
         public string FirstName { get; set; }
-        public DateTime LastPurchase { get; set; }
+        public string LastPurchase { get; set; }
+        public DateTime PurchaseDate { get; set; }
 
         public virtual ICollection<Transaction> Transactions { get; set; }
 
