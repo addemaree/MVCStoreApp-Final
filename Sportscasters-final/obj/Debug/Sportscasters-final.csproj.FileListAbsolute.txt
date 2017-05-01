@@ -69,9 +69,6 @@ C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-fin
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters-final.csprojResolveAssemblyReference.cache
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters-final.dll
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters-final.pdb
-C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters_final.Migrations.InitialCreate.resources
-C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters-final.csproj.GenerateResource.Cache
-C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\obj\Debug\Sportscasters_final.Migrations.UpdateCustomer.resources
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\bin\PagedList.dll
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\bin\PagedList.Mvc.dll
 C:\Users\addemaree\Desktop\ElevenFifty-net\Sportscasters-final\Sportscasters-final\bin\PagedList.xml
